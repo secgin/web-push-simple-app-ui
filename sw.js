@@ -1,6 +1,6 @@
 self.addEventListener('push', (e) => {
     const config = {
-        body: e.data.text() | 'Mesaj içeriği',
+        body: e.data.text() || 'Mesaj içeriği',
         data: {
             dateOfArrival: Date.now(),
             primaryKey: '1'
@@ -10,5 +10,5 @@ self.addEventListener('push', (e) => {
     };
 
     e.waitUntil(
-        self.registration.showNotification('Makale başlık', "Push gönderme denemesi..."));
+        self.registration.showNotification('Makale başlık', config));
 });
