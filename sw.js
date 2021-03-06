@@ -6,7 +6,18 @@ self.addEventListener('push', (e) => {
             primaryKey: '1'
         },
         icon: 'images/logo.png',
-        vibrate: [100, 50, 100]
+        vibrate: [100, 50, 100],
+        actions: [
+            {
+                action: 'explore',
+                title: 'Action 1'
+            },
+            {
+                action: "close",
+                title: "Bildirimi Kapat",
+                //icon
+            }
+        ]
     };
 
     e.waitUntil(
