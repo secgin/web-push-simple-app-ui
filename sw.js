@@ -5,7 +5,7 @@ self.addEventListener('push', (e) => {
             dateOfArrival: Date.now(),
             primaryKey: '1'
         },
-        icon: 'images/logo.jpeg',
+        icon: 'images/logo.png',
         vibrate: [100, 50, 100]
     };
 
