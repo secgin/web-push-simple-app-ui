@@ -14,8 +14,7 @@ self.addEventListener('push', (e) => {
             },
             {
                 action: "close",
-                title: "Bildirimi Kapat",
-                //icon
+                title: "Bildirimi Kapat"
             }
         ]
     };
