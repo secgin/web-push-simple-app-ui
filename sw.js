@@ -1,6 +1,6 @@
 self.addEventListener('push', (e) => {
     const config = {
-        body: e.data.text() | 'Yeni Makale',
+        body: e.data.text() | 'Mesaj içeriği',
         data: {
             dateOfArrival: Date.now(),
             primaryKey: '1'
