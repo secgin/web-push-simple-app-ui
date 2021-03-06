@@ -10,5 +10,5 @@ self.addEventListener('push', (e) => {
     };
 
     e.waitUntil(
-        self.registration.showNotification('Makale başlık', config));
+        self.registration.showNotification('Makale başlık', "Push gönderme denemesi..."));
 });
